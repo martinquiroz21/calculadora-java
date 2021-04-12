@@ -3,9 +3,9 @@ public class Calculadora {
 	public static void main(String[] args) {
 		
 		static Scanner teclado = new Scanner(System.in);
-	        static int a, b;
-	        static int resultado = 0;
-	        static int opcion = 0;
+	    static int a, b;
+		static int resultado = 0;
+		static int opcion = 0;
 		
 		do{
 			mostrarMenu();
@@ -44,22 +44,5 @@ public class Calculadora {
 			System.out.println("Ingrese el número de su operación: /n 1 sumar /n 2 restar /n 3 multiplicar /n 4 dividir /n 0 salir");
 		}
 		
-		public static void sumar(){
-			System.out.println("Ingrese el primer valor:");
-			a = teclado.nextInt();
-			System.out.println("Ingrese el segundo valor:");
-			b = teclado.nextInt();
-			resultado = a + b;
-			System.out.println("El resultado es: " + resultado);
-		}
-		
-		public static void restar(){
-			System.out.println("Ingrese el primer valor:");
-			a = teclado.nextInt();
-			System.out.println("Ingrese el segundo valor:");
-			b = teclado.nextInt();
-			resultado = a - b;
-			System.out.println("El resultado es: " + resultado);
-		}
 		
 }
