@@ -2,45 +2,47 @@ public class Calculadora {
 	
 	public static void main(String[] args) {
 		
-		Scanner teclado = new Scanner(System.in);
-		int a;
-		int b;
-		int opcion;
-		int resultado = 0;
+		static Scanner teclado = new Scanner(System.in);
+	    static int a, b;
+	    static int resultado = 0;
+	    static int opcion = 0;
+		
 		do{
-		System.out.println("Ingrese su operación: /n 1 para sumar /n 2 para restar /n 3 para multiplicar /n 4 para dividir");
-		opcion = teclado.nextInt();
-		} while(opcion < 1 || opcion > 4);
-		
-		System.out.println("Ingrese el primer numero");
-		a = teclado.nextInt();
-		System.out.println("Ingrese el segundo numero");
-		b = teclado.nextInt();
-		
-		switch(opcion) {
-		
-		case 1:
-			resultado = a + b;
-			break;
+			mostrarMenu();
+			opcion = teclado.nextInt();
 			
-		case 2:
-			resultado = a - b;
-			break;
+			switch(opcion){
+				case 1:// Suma
+				sumar();
+				break;
+				
+				case 2:// Resta
+				restar();
+				break;
+				
+				case 3:// Multiplicación
+				multiplicar();
+				break;
+				
+				case 4:// División
+				dividir();
+				break;
+				
+				case 0:// Salir
+				System.out.println("Saliste del programa...el programa finalizó.");
+				break;
+				
+				default:
+				System.out.println("Opción inválida!");
+				break;
+			}
 			
-		case 3:
-			resultado = a * b;
-			break;
-			
-		case 4:
-			resultado = a / b;
-			break;
-			
-		default:
-			System.out.println("Errorrrr!!!");
-			break;
+		} while(opcion != 0);
 		}
-
-		System.out.println("El resultado es " + resultado);
 		
+		public static void mostrarMenu(){
+			System.out.println("Ingrese el número de su operación: /n 1 sumar /n 2 restar /n 3 multiplicar /n 4 dividir /n 0 salir");
 		}
+		
+		
 }
