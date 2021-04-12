@@ -3,9 +3,9 @@ public class Calculadora {
 	public static void main(String[] args) {
 		
 		static Scanner teclado = new Scanner(System.in);
-	    static int a, b;
-	    static int resultado = 0;
-	    static int opcion = 0;
+	        static int a, b;
+	        static int resultado = 0;
+	        static int opcion = 0;
 		
 		do{
 			mostrarMenu();
