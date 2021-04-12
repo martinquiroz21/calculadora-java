@@ -52,6 +52,15 @@ public class Calculadora {
 			resultado = a * b;
 			System.out.println("El resultado es: " + resultado);
 		}
+			
+		public static void sumar(){
+			System.out.println("Ingrese el primer valor:");
+			a = teclado.nextInt();
+			System.out.println("Ingrese el segundo valor:");
+			b = teclado.nextInt();
+			resultado = a + b;
+			System.out.println("El resultado es: " + resultado);
+		}
 		
 		public static void dividir(){
 			System.out.println("Ingrese el primer valor:");
@@ -59,6 +68,15 @@ public class Calculadora {
 			System.out.println("Ingrese el segundo valor:");
 			b = teclado.nextInt();
 			resultado = a / b;
+			System.out.println("El resultado es: " + resultado);
+		}
+		
+		public static void restar(){
+			System.out.println("Ingrese el primer valor:");
+			a = teclado.nextInt();
+			System.out.println("Ingrese el segundo valor:");
+			b = teclado.nextInt();
+			resultado = a - b;
 			System.out.println("El resultado es: " + resultado);
 		}
 		
