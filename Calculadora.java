@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class Calculadora {
+	
+	// Este es un comentario de prueba
 
 	static Scanner teclado = new Scanner(System.in);
 	static int a, b;
