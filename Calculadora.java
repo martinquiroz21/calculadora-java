@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class Calculadora {
+	
+	// Este es un comentario de prueba
 
 	static Scanner teclado = new Scanner(System.in);
 	static int a, b;
@@ -82,13 +84,5 @@ public class Calculadora {
 		resultado = a - b;
 		System.out.println("El resultado es: " + resultado);
 	}
-	
-	// ESTO ES UN MENSAJE DESDE LA RAMA PRUEBA
-	
-	// SIGO HACIENDO CAMBIOS DESDE LA RAMA PRUEBA
-	
-	// ESTO ES OTRO CAMBIO DESDE PRUEBA DOS
-	
-	// ULTIMO COMMIT
 
 }
